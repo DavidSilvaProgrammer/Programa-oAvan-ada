@@ -12,9 +12,9 @@ int main() {
     scanf("%f",&salario);
     if (salario<=5000){
         salario=salario+1000;
-        printf("O salario desse funcionario recebera aumento de 1000 e vai subir para: %0.2f",salario);
+        printf("O salario desse funcionario recebera aumento de 1000 e subira para: %0.2f",salario);
     }else{
-        printf("O salario desse funcionario não recebe aumento");
+        printf("O salario desse funcionario não recebera aumento");
     }
     
     return 0;
