@@ -1,0 +1,57 @@
+// as linhas abaixo "chamam as bibliotecas"
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() {
+    //a linha abaixo configura o idioma para português
+    setlocale(LC_ALL,"Portuguese");
+    
+    //a linha abaixo muda a cor do texto
+    //OBS.: Primeira letra ou número modifica o fundo, a segunda
+    //modifica a letra, caso tenha somente uma letra ou número,
+    //modifica somente a letra na hora da execução do programa
+    
+    system("color 5E");
+    printf("Olá mundo\n");
+    //a linha abaixo limpa a tela
+    system("cls");
+    printf("Professor José de Assis");
+    system("pause");
+    
+    
+
+    return 0;
+}
+
+/*
+Código das cores:
+
+0-Preto
+1-Azul
+2-Verde
+3-Verde água
+4-Vermelho
+5-Roxo
+6-Amarelo
+7-Branco
+8-Cinza
+9-Azul Claro
+
+A-Verde claro
+B-Verde-água claro
+C-Vermelho claro
+D-Lilás
+E-Amarelo claro
+F-Branco brilhando
+
+
+
+
+
+
+
+
+
+
+
