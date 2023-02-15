@@ -2,4 +2,20 @@
 caso o salário seja inferior ou igual a R$ 5000.00
 */
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
+int main() {
+    float salario;
+    printf("Digite o salario do funcionario:\n");
+    scanf("%f",&salario);
+    if (salario<=5000){
+        salario=salario+1000;
+        printf("O salario desse funcionario recebera aumento de 1000 e vai subir para: %0.2f",salario);
+    }else{
+        printf("O salario desse funcionario não recebe aumento");
+    }
+    
+    return 0;
+}
