@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int func(arg){
+    if( arg==0){
+        return 0;
+    }else{
+        return (arg%2) + 10 * func(arg/2);
+    }
+}
+
+int main() {
+    int resposta=func(5);
+    printf("%d",resposta);
+    return 0;
+}
