@@ -1,0 +1,166 @@
+int entrada
+int resposta
+int tst
+
+calcule(aux)
+tst=1
+
+se aux = 0
+retorna tst
+
+senão
+retorna aux+calcule(aux-1)
+
+Main:
+entrada
+resposta=calcule(entrada)
+escreva(resposta)
+
+Valor de entrada 14:
+
+
+calcule(14)
+
+senao
+retorna 14+calcule(13)
+
+calcule(13)
+
+senao
+retorna 13+calcule(12)
+
+calcule(12)
+senao
+retorna 12+calcule(11)
+
+calcule(11)
+senao
+retorna 11+calcule(10)
+
+calcule(10)
+senao
+retorna 10+calcule(9)
+
+calcule(9)
+senao
+retorna 9+calcule(8)
+
+calcule(8)
+senao
+retorna 7+calcule(6)
+
+calcule(6)
+senao
+retorna 6+calcule(5)
+
+calcule(5)
+senao
+retorna 5+calcule(4)
+
+calcule(4)
+senao
+retorna 4+calcule(3)
+
+calcule(3)
+senao
+retorna 3+calcule(2)
+
+calcule(2)
+senao
+retorna 2+calcule(1)
+
+calcule(1)
+senao
+retorna 1+calcule(0)
+
+calcule(0)
+Caso base: se
+retorna 1
+
+Processo de desempilhar:
+
+1+1=2
+2+2=4
+3+4=7
+4+7=11
+5+11=16
+6+16=22
+7+22=29
+8+29=37
+9+37=46
+10+46=56
+11+56=67
+12+67=79
+13+79=92
+14+92=106
+
+
+Quest8
+
+func(arg)
+if arg==0
+retorna 0
+
+else
+retorna (arg%2)+10*func(arg//2)
+
+Main:
+Recebe como parametro 5
+
+func(5)
+else
+retorna (1)+10*func(2)
+
+func(2)
+else
+retorna (0)+10*func(1)
+
+func(1)
+else
+retorna (1)+10*func(0) 
+
+func(0)
+Caso base: if arg = 0
+retorna 0
+
+Processo de desempilhar:
+
+
+1+10*0=1 //func 1
+
+1+10*1=11 //func 2 //linha errada. Acertei em cima, mas
+agora nesta hora de desempilhar copiei o dado errado.
+Deveria ter colocado aqui "0+10*1=10"
+
+1+10*11=111 //func 5
+
+Tentando fazer de novo:
+
+Quest8
+
+func(arg)
+if arg==0
+retorna 0
+
+else
+retorna (arg%2)+10*func(arg//2)
+
+Main:
+Recebe como parametro 5
+
+Func(5)
+Else retorna (1)+10*func(2)
+
+func(2)
+else retorna (0)+10*func(1)
+
+func(1)
+else retorna (1)+10*func(0)
+
+
+func(0)
+Caso base: if retorna 0
+
+1+10*0=1
+0+10*1=10
+1+10*10=101
